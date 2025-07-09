@@ -24,13 +24,21 @@
     margin: 1rem auto;
 
 }
-.btn{
+.btn1{
     padding: 10px 30px;
     color:var(--body-color);
     background-color:var(--green-color);
     border-radius: var(--radius-btn);
     border: none;
 }
+.btn2{
+    padding: 10px 30px;
+    color:var(--green-color);
+    background-color:var(--lighrgreen-color);
+    border-radius: var(--radius-btn);
+    border: none;
+}
+
 .bg1{
     background-color: var(--green-color);
 }
@@ -62,6 +70,8 @@
     background-color: var(--body-color);
     border-radius: var(--radius);
     box-shadow: 6px 6px 6px lightgray;
+    border: 1px solid lightgray;
+    padding: var(--pading);
 }
                      /* top nav bar css start */
 .first-nav{
@@ -103,11 +113,88 @@
                     /* second nav bar start */
 .nav-table{
     /* display: flex; */
-}
-.nav-table td{
-    flex: 1;
-}
+} 
+
                     /* Dream Homes Await CSS section start */
 .Dream_Homes{
     display: flex;
+}
+.btn-font{
+    font-size: 20px;
+    font-family: monospace;
+}
+.Dream_Homes_heding {
+    font-size: 50px;
+    
+}
+.Dream-p{
+    font-size: 19px;
+    padding: 14px 0px;
+    color: darkgray;
+}
+.box-heding{
+    font-size: 34px;
+}
+.box-p{
+    font-size: 18px;
+}
+.table-parent{
+    display: flex;
+    margin: 30px 15px;
+}
+.table-chaild{
+    flex: 1;
+    margin: 0px 5px;
+
+}
+.formbox{
+    border: 1px solid lightgray;
+    border-radius: 10px ;
+    margin-top: 1rem;
+}
+.formbox input,.formbox select {
+    
+    border: none;
+    padding: 10px;
+    width: 80%;
+    outline: none
+}
+.formbox .fa{
+    margin-left: 5px;
+    font-size: 26px;
+    
+}
+label{
+    font-weight: bold;
+}
+.searchbtn{
+    padding: 15px 45px;
+    width: 98%;
+    border-radius: 15px;
+    background-color: var(--green-color);
+    color: var(--body-color);
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    align-items: center;
+    border: none;
+}
+.searchbtn .fa{
+    margin: 10px;
+
+}
+.achivement-parent{
+    display: flex;
+    padding: 50px;
+    margin: 50px;
+    background-color: var(--body-color);
+    border-radius: 15px;
+}
+.achivement-chaild{
+    flex: 1;
+    padding: 50px;
+    margin: 50px;
+    border: 1px solid lightgray;
+    background-color: var(--body-color);
+    border-radius: 15px;
 }
