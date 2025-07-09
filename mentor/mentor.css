@@ -1,3 +1,113 @@
-h1{
-    background-color: red;
+
+:root{
+    --green-color:#077f46;
+    --lighrgreen-color:#ceefdf;
+    --body-color:#ffffff;
+    --radius:16px;
+    --radius-btn:25px;
+    --pading: 30px 25px;
+    --center:center;
+    --left:left;
+    --right:right;
+    --heding1:32px;
+    --heding2:20px;
+    --heding3:18px;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: 1rem auto;
+
+}
+.btn{
+    padding: 10px 30px;
+    color:var(--body-color);
+    background-color:var(--green-color);
+    border-radius: var(--radius-btn);
+    border: none;
+}
+.bg1{
+    background-color: var(--green-color);
+}
+.bg2{
+    background-color:var(--lighrgreen-color);
+}
+.bg3{
+    background-color: var(--body-color);
+}
+.text1{
+    color: var(--green-color);
+}
+.text2{
+    color:var(--lighrgreen-color);
+}
+.text3{
+    color: var(--body-color);
+}
+.text_C{
+    text-align:var(--center);
+}
+.text_L{
+    text-align:var(--left);
+}
+.text_R{
+    text-align:var(--right);  
+}
+.box{
+    background-color: var(--body-color);
+    border-radius: var(--radius);
+    box-shadow: 6px 6px 6px lightgray;
+}
+                     /* top nav bar css start */
+.first-nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #023b6d;
+    align-items: center;
+}
+.first-nav img{
+    width: 180px;
+}
+/* .first-nav-chaild .fa {
+    margin: 10px;
+    height: 22px;
+    width: 22px;
+
+} */
+.first-nav button{
+    padding: 9px 30px;
+    margin: 10px;
+ }
+ 
+.fa-desktop{
+    font-size: 25px;
+}
+.fa-tablet{
+    font-size: 29px;
+}
+.fa-mobile{
+    font-size: 31px;
+}
+.fa-share-square{
+    font-size: 26px;
+}
+.fa-download{
+    font-size: 27px;
+}
+                    /* top nav bar CSS end */
+                    /* second nav bar start */
+.nav-table{
+    /* display: flex; */
+}
+.nav-table td{
+    flex: 1;
+}
+                    /* Dream Homes Await CSS section start */
+.Dream_Homes{
+    display: flex;
 }
