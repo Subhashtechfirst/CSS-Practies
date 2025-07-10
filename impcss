@@ -1,0 +1,90 @@
+Here's a list of the most important and commonly used CSS properties, organized by category to help you understand their role:
+
+✅ Layout & Positioning
+display – Defines element display behavior (block, inline, flex, grid, etc.).
+
+position – Specifies positioning method (static, relative, absolute, fixed, sticky).
+
+top, right, bottom, left – Used with position to move elements.
+
+z-index – Controls stack order (overlapping elements).
+
+float – Floats elements (mostly legacy, replaced by Flexbox/Grid).
+
+clear – Stops elements from wrapping around floated items.
+
+flex, flex-direction, justify-content, align-items, flex-wrap – Core Flexbox properties.
+
+grid-template-columns, grid-template-rows, gap, place-items – Core Grid layout properties.
+
+📏 Box Model
+width, height
+
+margin – Outer spacing.
+
+padding – Inner spacing.
+
+border, border-radius – Border style and rounded corners.
+
+box-sizing – Defines whether padding/border is included in width (content-box or border-box).
+
+🎨 Typography
+font-family
+
+font-size
+
+font-weight
+
+line-height
+
+letter-spacing
+
+text-align
+
+color – Text color.
+
+text-decoration – Underline, line-through, etc.
+
+text-transform – Uppercase, lowercase, capitalize.
+
+🎨 Visual Design
+background-color
+
+background-image
+
+background-size
+
+opacity
+
+box-shadow
+
+filter – Blur, brightness, etc.
+
+🎯 Interactivity & Effects
+cursor – Changes mouse pointer.
+
+transition – Adds animation to property changes.
+
+transform – Scale, rotate, translate, skew.
+
+animation, @keyframes – For more complex animations.
+
+📱 Responsive Design
+media queries (@media) – Apply styles based on screen size.
+
+max-width, min-width
+
+viewport units – vw, vh, %
+
+🌐 Miscellaneous
+overflow – What happens when content overflows (visible, hidden, scroll, auto).
+
+visibility – Show/hide without removing space.
+
+display: none – Hides element and removes it from flow.
+
+pointer-events – Controls mouse interaction.
+
+content – Used with ::before and ::after pseudo-elements.
+
+Would you like this list as a downloadable cheat sheet or want to focus on a specific category like Flexbox or Grid?
