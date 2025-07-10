@@ -1,0 +1,119 @@
+To generate the downloadable PDF cheat sheet, you need to be **logged in** to use Python inside ChatGPT.
+
+However, you can copy and run the code below on your own computer using Python (make sure you have the `fpdf` library installed with `pip install fpdf`):
+
+```python
+from fpdf import FPDF
+
+# Create a simple PDF flashcard-style JavaScript cheat sheet
+pdf = FPDF()
+pdf.set_auto_page_break(auto=True, margin=15)
+pdf.add_page()
+pdf.set_font("Arial", size=12)
+
+# Content for the cheat sheet
+content = """
+JavaScript Flashcards Cheat Sheet
+
+🔹 1. Variables
+let x = 10;   // Block-scoped
+const y = 20; // Constant block-scoped
+var z = 30;   // Function-scoped (avoid if possible)
+
+🔹 2. Data Types
+// Primitives
+let str = "Hello";       // string
+let num = 42;            // number
+let isOn = true;         // boolean
+let nothing = null;      // null
+let notDefined;          // undefined
+
+// Non-primitives
+let arr = [1, 2, 3];     // array
+let obj = { key: "val" }; // object
+
+🔹 3. Functions
+function add(a, b) {
+  return a + b;
+}
+const multiply = (a, b) => a * b;
+
+🔹 4. Closures
+function outer() {
+  let count = 0;
+  return function inner() {
+    count++;
+    return count;
+  };
+}
+const counter = outer();
+counter(); // 1
+counter(); // 2
+
+🔹 5. Asynchronous JavaScript
+// Promise
+fetch('https://api.example.com')
+  .then(res => res.json())
+  .then(data => console.log(data));
+
+// async/await
+async function getData() {
+  const res = await fetch('https://api.example.com');
+  const data = await res.json();
+  console.log(data);
+}
+
+🔹 6. The "this" Keyword
+const obj = {
+  name: "Alice",
+  greet() {
+    console.log(this.name);
+  }
+};
+obj.greet(); // "Alice"
+
+🔹 7. Destructuring & Spread
+const user = { name: "Bob", age: 30 };
+const { name, age } = user;
+
+const nums = [1, 2, 3];
+const newNums = [...nums, 4]; // [1, 2, 3, 4]
+
+🔹 8. Event Handling (DOM)
+document.querySelector('#btn').addEventListener('click', () => {
+  alert('Clicked!');
+});
+
+🔹 9. Modules
+// Export
+export const greet = () => "Hello";
+
+// Import
+import { greet } from './utils.js';
+
+🔹 10. Error Handling
+try {
+  throw new Error("Oops!");
+} catch (err) {
+  console.log(err.message);
+}
+
+🔹 Bonus: Useful Shortcuts
+// Optional Chaining
+let city = user?.address?.city;
+
+// Nullish Coalescing
+let name = inputName ?? "Guest";
+"""
+
+# Add content to PDF
+for line in content.strip().split('\n'):
+    pdf.multi_cell(0, 8, line)
+
+# Save the PDF
+pdf.output("javascript_flashcards_cheatsheet.pdf")
+```
+
+This will create a file called `javascript_flashcards_cheatsheet.pdf` in your current directory.
+
+Would you like a version with design/styling too (colors, headings, etc.)?
